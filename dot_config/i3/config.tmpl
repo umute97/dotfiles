@@ -56,7 +56,10 @@ bindsym $mod+e exec i3-sensible-terminal -e ranger
 
 ### AUTOSTARTS ###
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+{{- if eq .chezmoi.hostname "derBossMobil" }}
 exec_always --no-startup-id nm-applet
+{{- end }}
 
 # scale dpi
 exec xrandr --dpi {{ .dpi }} 
@@ -68,7 +71,7 @@ exec_always xset -b
 exec_always setxkbmap -layout "de,gr" -option "grp:caps_toggle"
 
 # Wallpaper
-exec_always --no-startup-id feh --bg-fill ~/Pictures/cooler.jpg
+exec_always --no-startup-id feh --bg-fill {{ .wppath }}
 
 # Lock screen
 exec --no-startup-id xautolock -time 10 -locker 'i3lock -i ~/Pictures/space.png -t' -corners +00-

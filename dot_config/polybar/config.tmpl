@@ -72,6 +72,98 @@ wm-restack = i3
 
 ;override-redirect = true
 {{- end}}
+{{- if eq .chezmoi.hostname "derBoss" }}
+[bar/dp4]
+monitor = ${env:MONITOR:DP-4}
+bottom = false
+width = 100%
+height = 3%
+offset-x = 0
+offset-y = 0
+radius = 0.0
+fixed-center = true
+
+
+background = ${colors.my_background}
+foreground =  ${colors.my_foreground}
+
+line-size = 2.5
+line-color = ${colors.my_color4}
+
+border-size = 0
+border-color = ${colors.my_color2}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "Source Code Pro:size=22"
+font-1 = "FontAwesome:size=22"
+
+modules-left = i3 xwindow
+modules-center = date
+modules-right = pulseaudio player_previous player_playpause player_next player_title
+
+tray-position = right
+tray-padding = 9
+tray-offset-y = 0%
+tray-offset-x = 0%
+tray-maxsize = 18
+tray-detached = false
+tray-background = ${colors.my_background}
+
+wm-restack = i3
+
+;override-redirect = true
+
+[bar/dp0]
+monitor = ${env:MONITOR:DP-0}
+bottom = false
+width = 100%
+height = 3%
+offset-x = 0
+offset-y = 0
+radius = 0.0
+fixed-center = true
+
+
+background = ${colors.my_background}
+foreground =  ${colors.my_foreground}
+
+line-size = 2.5
+line-color = ${colors.my_color4}
+
+border-size = 0
+border-color = ${colors.my_color2}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "Source Code Pro:size=22"
+font-1 = "FontAwesome:size=22"
+
+modules-left = i3 xwindow
+modules-center = date
+modules-right = pulseaudio player_previous player_playpause player_next player_title
+
+tray-position = right
+tray-padding = 9
+tray-offset-y = 0%
+tray-offset-x = 0%
+tray-maxsize = 18
+tray-detached = false
+tray-background = ${colors.my_background}
+
+wm-restack = i3
+
+;override-redirect = true
+
+{{- end }}
 
 [module/i3]
 type = internal/i3
