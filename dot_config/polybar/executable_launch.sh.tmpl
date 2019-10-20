@@ -6,6 +6,13 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch Polybar, using default config location ~/.config/polybar/config
+
+{{- if eq .chezmoi.hostname "derBoss" }}
 polybar dp0 &
 polybar dp4 &
+{{- end }}
+{{- if eq .chezmoi.hostname "derBossMobil" }}
+polybar edp1 &
+{{- end }}
+
 echo "Polybar launched..."
