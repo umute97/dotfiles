@@ -1,0 +1,22 @@
+set number relativenumber
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+" MAPS
+map + :RainbowParentheses<CR>
+map ; :Files<CR>
+
+" Call plugin manager
+call plug#begin()
+
+" USED PLUGINS "
+
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-notes'
+Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'junegunn/fzf.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'terryma/vim-multiple-cursors'
+
+call plug#end()
