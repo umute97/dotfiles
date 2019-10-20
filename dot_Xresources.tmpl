@@ -4,17 +4,16 @@
 
 Xft.dpi: 200
 
-
 !###################
 !# URxvt settings  #
 !###################
 
 ! FONT
-URxvt*font: xft:source code pro:regular:pixelsize=30, xft:inconsolata nerd font:size=30
-URxvt*imFont: xft:source code pro:regular:pixelsize=30
-URxvt*boldFont: xft:source code pro:semibold:pixelsize=30
-URxvt*italicFont: xft:source code pro:italic:pixelsize=30
-URxvt*boldItalicFont: xft:source code pro:semibold:italic:pixelsize=30
+URxvt*font: xft:source code pro:regular:pixelsize={{ .fontsize }}, xft:inconsolata nerd font:size={{ .fontsize }}
+URxvt*imFont: xft:source code pro:regular:pixelsize={{ .fontsize }}
+URxvt*boldFont: xft:source code pro:semibold:pixelsize={{ .fontsize }}
+URxvt*italicFont: xft:source code pro:italic:pixelsize={{ .fontsize }}
+URxvt*boldItalicFont: xft:source code pro:semibold:italic:pixelsize={{ .fontsize }}
 URxvt*letterSpace: -1*/
 
 ! MISC
@@ -23,6 +22,11 @@ URxvt.saveLines:            1000
 URxvt.internalBorder:       3
 URxvt.lineSpace:            0
 URxvt.scrollBar:	    false
+
+URxvt.keysym.Control-Up:     \033[1;5A
+URxvt.keysym.Control-Down:   \033[1;5B
+URxvt.keysym.Control-Left:   \033[1;5D
+URxvt.keysym.Control-Right:  \033[1;5C
 
 !##############
 !#   COLORS   #
