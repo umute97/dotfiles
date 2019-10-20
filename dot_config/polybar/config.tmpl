@@ -27,6 +27,7 @@ my_color13	= ${xrdb:color13}
 my_color14	= ${xrdb:color14}
 my_color15	= ${xrdb:color15}
 
+{{- if eq .chezmoi.hostname "derBossMobil" }}
 [bar/edp1]
 monitor = ${env:MONITOR:eDP1}
 bottom = false
@@ -36,7 +37,6 @@ offset-x = 0
 offset-y = 0
 radius = 0.0
 fixed-center = true
-
 
 background = ${colors.my_background}
 foreground =  ${colors.my_foreground}
@@ -71,6 +71,7 @@ tray-background = ${colors.my_background}
 wm-restack = i3
 
 ;override-redirect = true
+{{- end}}
 
 [module/i3]
 type = internal/i3
