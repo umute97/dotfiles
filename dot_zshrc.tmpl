@@ -16,10 +16,10 @@ ZSH_THEME="agnoster"
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
+{{- if eq .chezmoi.hostname "derBoss" }}
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export GDK_SCALE=2
-
+{{- end }}
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
