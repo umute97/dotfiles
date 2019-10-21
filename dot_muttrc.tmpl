@@ -1,0 +1,19 @@
+# About me
+set from = "{{ .email }}"
+set realname = "{{ .name }}"
+
+# Credentials
+set smtp_url = "smtp://smtp.kit.edu:587/"
+set smtp_pass = "{{ .smtppass }}"
+set ssl_force_tls = yes
+set ssl_starttls = yes
+
+set imap_user = "{{ .email }}"
+set imap_pass = "{{ .imappass }}"
+set folder = "imaps://imap.kit.edu:993/"
+set spoolfile = +INBOX
+
+# Misc.
+set mail_check = 30
+set move = no
+set editor = "vim"
