@@ -5,6 +5,21 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+### COLORS FROM XRES ###
+set_from_resource $black  color0
+set_from_resource $red    color1
+set_from_resource $green  color2
+set_from_resource $yellow color3
+set_from_resource $blue   color4
+set_from_resource $purple color5
+set_from_resource $cyan   color6
+set_from_resource $white  color7
+set_from_resource $grey   color15
+
+set_from_resource $fg foreground
+set_from_resource $bg background
+### COLORS END ###
+
 ### BASIC KEYS ###
 set $mod Mod4
 floating_modifier $mod
@@ -218,13 +233,13 @@ new_window none
 for_window [class="^.*"] border pixel 1
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #fff7b9 #fff7b9 #090909 #fff7b9   #fff7b9
-client.focused_inactive #fff7b9 #fff7b9 #090909 #fff7b9   #fff7b9
-client.unfocused        #282c34 #282c34 #ffffff #282c34   #282c34
-client.urgent           #ed254e #ed254e #ffffff #ed254e   #ed254e
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.focused          $white  $fg     $bg     $fg       $grey
+client.focused_inactive $grey   $bg     $fg     $fg       $grey
+client.unfocused        $bg     $bg     $fg     $fg       $grey
+client.urgent           $red    $red    $fg     $fg       $red
+client.placeholder      $green  $green  $fg     $fg       $green
 
-client.background       #ffffff
+client.background       $white
 
 ### SOUND BINDS ### 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2% #increase
