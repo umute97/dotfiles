@@ -1,0 +1,50 @@
+* {
+  black:      #000000;
+  red:        #C62828;
+  green:      #00695C;
+  yellow:     #F9A825;
+  blue:       #03A9F4;
+  mangenta:   #7E57C2;
+  cyan:       #4DD0E1;
+  emphasis:   #FAFAFA;
+  text:       #FAFAFA;
+  text-alt:   #FAFAFA;
+  fg:         #FAFAFA;
+  bg:         #1D1F21;
+
+  spacing: 0;
+  background-color: transparent;
+  font: "FontAwesome 30";
+  text-color: @text;
+}
+
+#window {
+  children: [ horibox ];
+  padding: 45% 0 0 25%;
+  width: 100%;
+  height: 100%;
+  background-color: #3c354f00;
+
+}
+
+#horibox {
+  children: [ listview ];
+}
+
+#listview {
+  layout: horizontal;
+  spacing: 100px;
+  lines: 3;
+}
+
+#element {
+  padding: 50px 20px 50px 20px;
+  background-color: transparent;
+  border-radius: 18;
+}
+
+#element.selected {
+  background-color: @green;
+  text-color: @fg;
+}
+

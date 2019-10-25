@@ -44,6 +44,7 @@ bindsym $mod+minus [instance="dropdown_qalc"] scratchpad show
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+d exec "rofi -show combi"
 bindsym $mod+l exec lock 
+bindsym $mod+Ctrl+e exec "bash $HOME/.config/rofi/powermenu.sh"
 
 # scrot
 bindsym --release Shift+Print exec scrot -e 'mv $f ~/Pictures/Screenshots'
