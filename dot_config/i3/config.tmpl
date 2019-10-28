@@ -53,10 +53,10 @@ bindsym --release Print exec scrot -s -e 'mv $f ~/Pictures/Screenshots'
 # show mounter script on keypress
 bindsym $mod+m exec "mounter"
 
-# atom
+# vscode
 bindsym $mod+a exec --no-startup-id code 
 
-# Chromium 
+# best browser there ever was 
 bindsym $mod+i exec --no-startup-id "qutebrowser"
 
 # Spotify
@@ -84,7 +84,7 @@ exec xrandr --dpi {{ .dpi }}
 exec_always xset -b
 
 # dual german-greek keymaps (yes, I'm a physicist)
-exec_always setxkbmap -layout "de,gr" -option "grp:caps_toggle"
+exec_always setxkbmap -layout "de,gr" -option "grp:caps_toggle" -variant nodeadkeys -option "grp:caps_switch" -option "grp_led:scroll" -option "kpdl:dot" -option "numpad:mac"
 
 # Wallpaper
 exec_always --no-startup-id feh --bg-fill {{ .wppath }}
