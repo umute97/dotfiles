@@ -10,7 +10,7 @@
 ## Aliases for commands. The keys of the given dictionary are the
 ## aliases, while the values are the commands they map to.
 ## Type: Dict
-# c.aliases = {'w': 'session-save', 'q': 'close', 'qa': 'quit', 'wq': 'quit --save', 'wqa': 'quit --save'}
+c.aliases = {'w': 'session-save', 'q': 'close', 'qa': 'quit', 'wq': 'quit --save', 'wqa': 'quit --save', 'dc': 'download-clear'}
 
 ## Time interval (in milliseconds) between auto-saves of
 ## config/cookies/etc.
@@ -904,7 +904,7 @@
 ## Default monospace fonts. Whenever "monospace" is used in a font
 ## setting, it's replaced with the fonts listed here.
 ## Type: Font
-# c.fonts.monospace = '"xos4 Terminus", Terminus, Monospace, "DejaVu Sans Mono", Monaco, "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace, Fixed, Consolas, Terminal'
+c.fonts.monospace = '"source code pro", Terminus, Monospace, "DejaVu Sans Mono", Monaco, "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace, Fixed, Consolas, Terminal'
 
 ## Font used for prompts.
 ## Type: Font
