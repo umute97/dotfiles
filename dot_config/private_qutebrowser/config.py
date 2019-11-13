@@ -1519,7 +1519,7 @@ c.fonts.monospace = '"source code pro", Terminus, Monospace, "DejaVu Sans Mono",
 ## Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
 ## for a blank page.
 ## Type: FuzzyUrl
-# c.url.default_page = 'https://start.duckduckgo.com/'
+c.url.default_page = 'https://google.com/'
 
 ## URL segments where `:navigate increment/decrement` will search for a
 ## number.
