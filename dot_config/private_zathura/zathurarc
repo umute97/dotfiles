@@ -1,5 +1,5 @@
 # zathurarc-dark
-set notification-error-bg       "#ef5350" # base01  # seem not work
+set notification-error-bg       "#ef5350" # base01  
 set notification-error-fg       "#fafafa" # red
 set notification-warning-bg     "#ffee58" # base01
 set notification-warning-fg     "#1d1f21" # red
@@ -38,4 +38,3 @@ set default-fg                  "#fafafa" # base1
 set recolor                     true
 set recolor-darkcolor          "#fafafa" # base02
 set recolor-lightcolor           "#1d1f21" # base1
-# set recolor-keephue             true      # keep original color
