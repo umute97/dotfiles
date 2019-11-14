@@ -4,7 +4,7 @@ set notification-error-fg       "#fafafa" # red
 set notification-warning-bg     "#ffee58" # base01
 set notification-warning-fg     "#1d1f21" # red
 set notification-bg             "#03a9f4" # base01
-set notification-fg             "#fafafa" # yellow
+set notification-fg             "#1d1f21" # yellow
 
 set completion-group-bg         "#002b36" # base03
 set completion-group-fg         "#839496" # base0
