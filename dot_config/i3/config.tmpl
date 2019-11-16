@@ -93,7 +93,7 @@ exec_always --no-startup-id feh --bg-fill {{ .wppath }}
 exec --no-startup-id xautolock -time 10 -locker 'i3lock -i ~/Pictures/space.png -t' -corners +00-
 
 # Compositor
-exec --no-startup-id compton -b --config .config/compton/compton.conf
+# exec --no-startup-id compton -b --config .config/compton/compton.conf
 
 # Notification daemon
 exec --no-startup-id dunst -conf .config/dunst/.dunstrc
@@ -237,9 +237,9 @@ new_window none
 for_window [class="^.*"] border pixel 1
 
 # class                 border  backgr. text    indicator child_border
-client.focused          $white  $fg     $bg     $fg       $grey
-client.focused_inactive $grey   $bg     $fg     $fg       $grey
-client.unfocused        $bg     $bg     $fg     $fg       $grey
+client.focused          $white 	$fg     $bg     $fg       $white
+client.focused_inactive $bg   	$bg     $fg     $fg       $bg
+client.unfocused        $bg     $bg     $fg     $fg       $bg
 client.urgent           $red    $red    $fg     $fg       $red
 client.placeholder      $green  $green  $fg     $fg       $green
 
