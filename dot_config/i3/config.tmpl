@@ -246,8 +246,8 @@ client.placeholder      $green  $green  $fg     $fg       $green
 client.background       $white
 
 ### SOUND BINDS ### 
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2% #increase
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2% #decrease
+bindsym XF86AudioRaiseVolume exec --no-startup-id ".config/scripts/audio.sh + 5"
+bindsym XF86AudioLowerVolume exec --no-startup-id ".config/scripts/audio.sh - 5"
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle #mute
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioNext exec --no-startup-id playerctl next
