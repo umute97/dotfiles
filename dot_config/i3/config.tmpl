@@ -30,15 +30,15 @@ font pango:monospace 10
 
 ### DROPDOWN CALCULATOR ###
 
-for_window [instance="dropdown_*"] floating enable
-for_window [instance="dropdown_*"] move scratchpad
-for_window [instance="dropdown_*"] sticky enable
-for_window [instance="dropdown_*"] scratchpad show
-for_window [instance="dropdown_*"] move position center
-for_window [instance="dropdown_qalc"] resize set 800 300
-for_window [instance="dropdown_qalc"] border pixel 2
-exec --no-startup-id i3-sensible-terminal -name dropdown_qalc -e qalc
-bindsym $mod+minus [instance="dropdown_qalc"] scratchpad show
+for_window [title="dropdown_*"] floating enable
+for_window [title="dropdown_*"] move scratchpad
+for_window [title="dropdown_*"] sticky enable
+for_window [title="dropdown_*"] scratchpad show
+for_window [title="dropdown_*"] move position center
+for_window [title="dropdown_qalc"] resize set 800 300
+for_window [title="dropdown_qalc"] border pixel 2
+exec --no-startup-id i3-sensible-terminal --title dropdown_qalc -e qalc
+bindsym $mod+minus [title="dropdown_qalc"] scratchpad show
 
 ### APPLICATION BINDS ###
 bindsym $mod+Return exec i3-sensible-terminal
