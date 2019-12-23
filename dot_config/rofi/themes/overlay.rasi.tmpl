@@ -14,13 +14,13 @@
 
   spacing: 0;
   background-color: transparent;
-  font: "FontAwesome 30";
+  font: "{{ .overlay_font }}";
   text-color: @text;
 }
 
 #window {
   children: [ horibox ];
-  padding: 45% 0 0 25%;
+  padding: 45% 0 0 {{ .overlay_padding_side }};
   width: 100%;
   height: 100%;
   background-color: #3c354f00;
