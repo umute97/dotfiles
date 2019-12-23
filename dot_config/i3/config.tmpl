@@ -87,7 +87,7 @@ exec_always xset -b
 exec_always setxkbmap -layout "de,gr" -option "grp:caps_toggle" -variant nodeadkeys -option "grp:caps_switch" -option "grp_led:scroll" -option "kpdl:dot" -option "numpad:mac"
 
 # Wallpaper
-exec_always --no-startup-id feh --bg-fill {{ .wppath }}
+exec_always --no-startup-id feh --bg-fill {{ .wallpaper_path }}
 
 # Lock screen
 exec --no-startup-id xautolock -time 10 -locker 'i3lock -i ~/Pictures/space.png -t' -corners +00-
