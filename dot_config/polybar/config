@@ -38,7 +38,7 @@ font-1 = "FontAwesome:size=22"
 
 modules-left = i3
 modules-center = date pmenu time
-modules-right = volume_icon volume
+modules-right = ip_icon ip netspeed_icon netspeed volume_icon volume
 
 tray-position = right
 tray-detached = false
