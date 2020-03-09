@@ -100,7 +100,7 @@ menu-1-1-exec = scrot -e 'mv $f ~/Pictures/Screenshots'
 [module/ip]
 type = internal/network
 
-interface = enp0s31f6
+interface = {{ .network_interface }}
 
 label-connected = %local_ip%
 label-connected-foreground = ${xcolor.foreground}
@@ -122,7 +122,7 @@ content-margin = 1
 [module/netspeed]
 type = internal/network
 
-interface = enp0s31f6
+interface = {{ .network_interface }}
 
 label-connected = %upspeed% / %downspeed%
 label-connected-foreground = ${xcolor.foreground}
