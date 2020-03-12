@@ -36,7 +36,7 @@ padding = 1
 font-0 = "Source Code Pro:size={{ .polybar_fontsize }}"
 font-1 = "FontAwesome:size={{ .polybar_fontsize }}"
 
-modules-left = i3
+modules-left = i3 {{- if eq .chezmoi.hostname "derBossMobil" }} battery_icon battery {{- end}}
 modules-center = date pmenu time
 modules-right = ip_icon ip netspeed_icon netspeed volume_icon volume
 
@@ -66,7 +66,7 @@ padding = 1
 font-0 = "Source Code Pro:size=22"
 font-1 = "FontAwesome:size=22"
 
-modules-left = i3
+modules-left = i3 
 modules-center = date pmenu time
 modules-right = ip_icon ip netspeed_icon netspeed volume_icon volume
 
