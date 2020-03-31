@@ -235,3 +235,22 @@ animation-charging-4 = 
 
 ; Framerate in milliseconds
 animation-charging-framerate = 750
+
+[module/updates]
+type=custom/script
+
+exec = ~/.config/polybar/scripts/checkupdates.sh
+
+interval = 600 
+
+format = <label> available
+format-background = ${xcolor.background}
+format-foreground = ${xcolor.foreground}
+
+[module/updates_icon]
+type=custom/text
+
+content = 
+
+format-background = ${xcolor.color15}
+format-foreground = ${xcolor.background}
