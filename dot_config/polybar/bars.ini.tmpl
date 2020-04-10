@@ -81,21 +81,13 @@ time = %H:%M
 label = %time%
 
 [module/pmenu]
-type = custom/menu
+type = custom/text
 
-label-open = "" 
-label-open-background = ${xcolor.foreground}
-label-open-foreground = ${xcolor.background}
-label-open-padding = 3
-label-open-margin = 1
-
-menu-0-0 =  
-menu-0-0-exec = menu-open-1 
-
-menu-1-0 = 
-menu-1-0-exec = scrot -s -e 'mv $f ~/Pictures/Screenshots'
-menu-1-1 =  
-menu-1-1-exec = scrot -e 'mv $f ~/Pictures/Screenshots'
+content = "" 
+content-background = ${xcolor.foreground}
+content-foreground = ${xcolor.background}
+content-padding = 3
+content-margin = 1
 
 [module/ip]
 type = internal/network
