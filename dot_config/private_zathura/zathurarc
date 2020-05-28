@@ -28,13 +28,13 @@ set statusbar-fg                "#fafafa" # base1
 set highlight-color             "#657b83" # base00  # hightlight match when search keyword(vim's /)
 set highlight-active-color      "#268bd2" # blue
 
-set default-bg                  "#1d1f21" # base02
-set default-fg                  "#fafafa" # base1
+set default-bg                  "#170f0d" # base02
+set default-fg                  "#c3c13d" # base1
 # set render-loading              true
 # set render-loading-fg           "#073642" # base02
 # set render-loading-bg           "#073642" # base02
 
 # Recolor book content's color
 set recolor                     true
-set recolor-darkcolor          "#fafafa" # base02
-set recolor-lightcolor           "#1d1f21" # base1
+set recolor-darkcolor          "#c3c13d" # base02
+set recolor-lightcolor           "#170f0d" # base1
